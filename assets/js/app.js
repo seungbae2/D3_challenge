@@ -215,7 +215,7 @@ function init(){
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .classed("axis-text", true)
-    .text("Healthcare");
+    .text("Lacks of Healthcare(%)");
 
   // updateToolTip function above csv import
   elementEnter = updateToolTip(chosenXAxis, elementEnter);
