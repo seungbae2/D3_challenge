@@ -55,11 +55,6 @@ function renderAxes(newXScale, xAxis) {
 // new circles
 function renderCircles(group, newXScale, chosenXaxis) {
 
-  // group.transition()
-  //   .duration(1000)
-  //   .attr("cx", d => newXScale(d[chosenXAxis]));
-
-  // return group;
   // Render transition of circles
   group.selectAll("circle")
     .transition()
@@ -88,7 +83,7 @@ function updateToolTip(chosenXAxis, group) {
 
   var toolTip = d3.tip()
     .attr("class", "d3-tip")
-    .offset([80, -60])
+    .offset([70, -40])
     .html(function(d) {
       return (`${d.state}<br>${label} ${d[chosenXAxis]}`);
     });
